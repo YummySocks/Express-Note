@@ -28,7 +28,6 @@ notes.delete('/:id', (req,res) => {
 
 // post method to add a new object of the note with title,text and id into the array
 notes.post('/', (req,res) => {
-  console.log(req.body)
   const { title , text } = req.body
 
   if(req.body) {
